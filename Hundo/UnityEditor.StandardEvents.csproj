@@ -342,6 +342,9 @@
     <Compile Include="Packages\com.unity.standardevents\Editor\Importer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Sprites\topdown_shooter\topdown_shooter\characters\readme.txt" />
+    <None Include="Assets\Sprites\topdown_shooter\topdown_shooter\guns\readme.txt" />
+    <None Include="Assets\Sprites\topdown_shooter\topdown_shooter\towers\readme.txt" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Light.uss" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\Alert.uxml" />
