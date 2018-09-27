@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Weapon : MonoBehaviour {
+public abstract class Useable : MonoBehaviour {
 
 	private bool isReady;
 	public float Rate;
 
-	public Weapon() {
+	public Useable() {
 		isReady = true;
 	}
 
-	protected abstract void OnUse();
+	protected abstract void onUse();
 
 	public bool Use() {
 		if (isReady) {
@@ -24,7 +24,7 @@ public abstract class Weapon : MonoBehaviour {
 
 	private IEnumerator exec() {
 		isReady = false;
-		OnUse();
+		onUse();
 		yield return new WaitForSeconds(Rate);
 		isReady = true;
 	}

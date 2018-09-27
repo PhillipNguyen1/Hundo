@@ -4,22 +4,22 @@ using UnityEngine;
 
 public abstract class Damageable : MonoBehaviour {
 
-	public enum Status { ACTIVE, DESTROYED };
+	public enum State { ACTIVE, DESTROYED };
 
 	public float HP;
-	public Status status;
+	public State CurrentState;
 
-	protected abstract void OnHit(float damage);
+	protected abstract void onDamaged(float damage);
 	
-	protected abstract void OnDestroyed();
+	protected abstract void onDestroyed();
 
 	public void Hit(float damage) {
-		if (status == Status.ACTIVE) {
-			OnHit(damage);
+		if (CurrentState == State.ACTIVE) {
+			onDamaged(damage);
 
 			if (HP <= 0.0f) {
-				OnDestroyed();
-				status = Status.DESTROYED;
+				onDestroyed();
+				CurrentState = State.DESTROYED;
 			}
 		}
 	}
