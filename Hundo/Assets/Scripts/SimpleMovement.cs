@@ -19,5 +19,5 @@ public class SimpleMovement : MonoBehaviour {
 
 	public void FixedUpdate() {
 		rigidbody.velocity = new Vector3(direction.x, direction.y, 0.0f) * Speed;
-	}
+    }
 }
