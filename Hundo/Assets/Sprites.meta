@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fileFormatVersion: 2
 guid: 145a40ac6df7210438a827af773c9ac8
 folderAsset: yes
@@ -6,3 +7,17 @@ DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 145a40ac6df7210438a827af773c9ac8
+=======
+guid: 1973aa68ab4aa6e4fade3b404a7f6265
+>>>>>>> Chris
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> master
